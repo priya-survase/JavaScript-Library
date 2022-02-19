@@ -1,6 +1,6 @@
 # Javascript-Library
 
-Preview [here](https://priya-survase.github.io/Javascript-Library/).
+Preview [here](https://priya-survase.github.io/JavaScript-Library/).
 
 Inspired by [The Odin Project](https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library).
 
