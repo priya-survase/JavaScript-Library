@@ -23,7 +23,7 @@ function createBook(){
 
 
     const newBook = new Book(bookName, bookAuthor, bookPages, bookStatus);
-    var temparray = JSON.parse(localStorage.getItem('library'));
+    var temparray = JSON.parse(localStorage.getItem('library')) || [];
     temparray.push(newBook);
     localStorage.setItem('library', JSON.stringify(temparray));
     getTotalBooks();
@@ -128,8 +128,7 @@ function updateStatus(e){
 
 //displays books on load
 function getbooks(){
-    var books =JSON.parse(localStorage.getItem('library'));
-    
+    var books =JSON.parse(localStorage.getItem('library')) || [];
     for(i=0; i<books.length; i++){
         displayBook(books[i].name, books[i].author, books[i].pages, books[i].status);
     }
@@ -141,6 +140,7 @@ function getTotalUnread(){
     var counter=0;
     var totalunread=0;
     var books = JSON.parse(localStorage.getItem('library'));
+    if(books.length == 0)
     for(i=0; i<books.length; i++){
         if(books[i].status) counter++;
     }
