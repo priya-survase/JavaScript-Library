@@ -27,7 +27,7 @@ function createBook(){
     temparray.push(newBook);
     localStorage.setItem('library', JSON.stringify(temparray));
     getTotalBooks();
-    getTotalUnread;
+    getTotalUnread();
     form.reset();                   //reset form input fields
 
     document.getElementById('form-container').style.visibility = "hidden";
