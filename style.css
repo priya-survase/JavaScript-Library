@@ -98,8 +98,8 @@ body{
 }
 #addbook-btn{
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     height: 80px;
     width: 80px;
     border-radius: 50%;
