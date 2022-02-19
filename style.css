@@ -1,0 +1,177 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #252828;
+}
+#title{
+    color: white;
+    font-size: 2rem;
+    padding-left: 2%;
+}
+#stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 20%;
+    font-size: 1.3rem;
+    color: white;
+}
+#clear{
+    display: flex;   
+    width: 7rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    border: solid 1px white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+#clear:hover{
+    background-color: white;
+    color: black;
+    border: solid 1px black;
+    border-radius: 5px;
+}
+#form-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#addform{
+    position: relative;
+    background-color: #e4d1d1;
+    padding: 10px;
+    border: solid 3px black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 70%;
+    justify-content: space-around;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#addform>div>.input{
+    width: 95%;
+    height: 2rem;
+    border: solid 1px #b9b0b0;
+    border-radius: 10px;
+}
+#form-add{
+    width: 100%;
+    height: 40px;
+    background-color:#77a8a8;
+    border-radius: 10px;
+    border:solid 1px black;
+    font-size: 1.1rem;
+}
+#form-close{
+    display: inline-block;
+    position:absolute;
+    right: 10px;
+    top: 5px;
+    color: black;
+}
+#form-close:hover{
+    color:red;
+}
+#msg{
+    color: red;
+}
+#addbook-btn{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: black;
+    font-weight: bold;
+    visibility: visible;
+    color: white;
+    font-size: 2rem;
+}
+#addbook-btn:hover{
+    border: solid 3px black;
+    background-color: white;
+    color: black;
+}
+#form-add:hover{
+    background-color: rgb(112, 112, 219);
+}
+#library{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.book{
+    height: 300px;
+    width: 20%;
+    border: solid 3px black;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1%;
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+.bookElement{
+    width: 100%;
+    height: 1.5rem;
+    padding: 1%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.booktitle{
+    font-size: 1.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#read{
+    background-color: #4dff88;
+}
+#unread{
+    background-color: #ff6666;
+}
+.remove-btn{
+    border: solid 1px black;
+    padding: 5%;
+    background-color: #66a3ff;
+}
+.remove-btn:hover{
+    outline: solid 2px black;
+}
+.toggle-btn{
+    border: solid 1px black;
+    padding: 5%
+}
+.toggle-btn:hover{
+    outline: solid 2px black;
+}
+

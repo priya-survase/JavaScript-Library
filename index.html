@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d45059756f.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>MyLibrary</title>
+</head>
+<body>
+    <div id="header">
+        <div id="title">
+            <i class="fas fa-bookmark"></i>  MY BOOK COLLECTION
+        </div>
+        <div id="stats">
+            <div id="total">Total Books : 0</div>
+            <div id="total-unread">Unread : 0</div>
+            <div id="clear">Clear Library</div>
+        </div>
+    </div>
+    <div id="form-container">
+        <form id="addform">
+            <div id="form-close">x</div>
+            <div>
+                <label for="name" name="name">Book Title</label>
+                <input class="input" type="text" id="name" required/>
+            </div>
+            <div>
+                <label for="author" name="author">Author</label>
+                <input class="input" type="text" id="author" required/>
+            </div>
+            <div>
+                <label for="pages" name="pages">Pages</label>
+                <input class="input" type="number" id="pages" required/>
+            </div>
+            <div>
+                <label for="status" name="status">Finished Reading?</label >
+                <input type="checkbox" id="read" required/>
+            </div>
+            <div>
+                <button type="button" id="form-add">ADD</button><br>
+                <p id="msg"></p>
+            </div>
+            
+        </form>
+    </div>
+    <button type="button" id="addbook-btn"><i class="fas fa-plus"></i></button>
+    
+    <div id="library"></div>
+</body>
+</html>
