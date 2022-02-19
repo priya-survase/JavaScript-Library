@@ -139,7 +139,7 @@ function getbooks(){
 function getTotalUnread(){
     var counter=0;
     var totalunread=0;
-    var books = JSON.parse(localStorage.getItem('library'));
+    var books = JSON.parse(localStorage.getItem('library')) || [];
     if(books.length == 0)
     for(i=0; i<books.length; i++){
         if(books[i].status) counter++;
@@ -150,7 +150,7 @@ function getTotalUnread(){
 
 function getTotalBooks(){
     var counter=0;
-    var books = JSON.parse(localStorage.getItem('library'));
+    var books = JSON.parse(localStorage.getItem('library')) || [];
     counter = books.length;
     document.getElementById('total').innerHTML = "Total Books : "+`${counter}`;
 }
