@@ -31,7 +31,7 @@ function createBook(){
     form.reset();                   //reset form input fields
 
     document.getElementById('form-container').style.visibility = "hidden";
-    getbooks();
+    displayBook(bookName, bookAuthor, bookPages, bookStatus);
 }
 
 
@@ -140,7 +140,6 @@ function getTotalUnread(){
     var counter=0;
     var totalunread=0;
     var books = JSON.parse(localStorage.getItem('library')) || [];
-    if(books.length == 0)
     for(i=0; i<books.length; i++){
         if(books[i].status) counter++;
     }
